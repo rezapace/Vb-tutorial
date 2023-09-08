@@ -1,0 +1,9 @@
+TBDate			TBName
+TBJenis			TBID
+TBOprate		CBGender
+TBSuhu			TBCity
+BtnSave
+DataMesin		PersonalData
+DataMesinDB		PersonDB
+
+Maintenen		LabelRegistration

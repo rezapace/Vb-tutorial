@@ -1,0 +1,47 @@
+VB Net Firebase RealTime Database
+
+------------------------------------------------
+Panel Header Color 55, 130, 114 Size 664, 203 
+LabelRegistration
+TBName
+TBID
+
+CBGender 
+Items : 
+Male
+Female
+Others
+
+TBCity
+BtnSave
+BtnClearAll
+
+PictureBoxUserReg Size 116, 116
+OpenFileDialogUserImage
+
+BtnCreateID
+------------------------------------------------
+
+------------------------------------------------
+LabelRecordView
+TBSearch
+
+CBSearchBy
+Items :
+Name
+ID
+
+BtnEdit
+BtnDelete
+BtnRefresh
+BtnClearSelection
+
+DGVUserData
+Column Header Color 3, 128, 131
+Alternating Rows Color : 191, 223, 222 Selection Color : 102, 177, 179
+Default Cell Color : 205, 229, 229 Selection Color : 102, 177, 179
+------------------------------------------------
+
+------------------------------------------------
+CMSUserDataTable Edit, Delete, Select All, Clear Selection
+------------------------------------------------
