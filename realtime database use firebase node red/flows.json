@@ -1,0 +1,84 @@
+[
+    {
+        "id": "a4753aa286e3077c",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "ca12339c1aede89c",
+        "type": "inject",
+        "z": "a4753aa286e3077c",
+        "name": "on",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "on",
+        "payloadType": "str",
+        "x": 550,
+        "y": 380,
+        "wires": [
+            [
+                "286e768ef8915454"
+            ]
+        ]
+    },
+    {
+        "id": "286e768ef8915454",
+        "type": "firebase modify",
+        "z": "a4753aa286e3077c",
+        "name": "",
+        "firebaseconfig": "",
+        "childpath": "ReDB/Rumah/Status",
+        "method": "set",
+        "value": "msg.payload",
+        "priority": "msg.priority",
+        "x": 1030,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "33273a6e9b912a11",
+        "type": "inject",
+        "z": "a4753aa286e3077c",
+        "name": "off",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "off",
+        "payloadType": "str",
+        "x": 550,
+        "y": 480,
+        "wires": [
+            [
+                "286e768ef8915454"
+            ]
+        ]
+    }
+]
